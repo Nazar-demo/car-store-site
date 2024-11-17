@@ -1,0 +1,15 @@
+{% extends "car_store/base.html" %}
+{% block content %}
+
+    <div class="detail-block">
+        <h2>{% block title %}{{ car.mark}} {{ car.model }}{% endblock %}</h2>
+        <p class="desc"><span class="mark-tag">Марка:</span> {{ car.mark }}</p>
+        <p class="desc"><span class="mark-tag">Модель:</span> {{ car.model }}</p>
+        <p class="desc"><span class="mark-tag">Країна:</span> {{ car.country }}</p>
+        <p class="desc"><span class="mark-tag">Потужність:</span> {{ car.power }}</p>
+        <p class="desc"><span class="mark-tag">Тип палива:</span> {{ car.fuel }}</p>
+        <p class="desc"><span class="mark-tag">Опис:</span> {{ car.description }}</p>
+        <p class="desc"><span class="mark-tag">Статус:</span> {{ car.status }}</p>
+    </div>
+
+{% endblock %}

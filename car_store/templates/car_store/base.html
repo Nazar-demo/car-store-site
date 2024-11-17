@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a class="link" href="/">Головна</a>
+        </nav>
+        <main>
+            <div class="block-content">
+                <h1>Car Store</h1>
+                <div class="main-content">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </main>
+        <footer class="foo">
+            <div class="foo-links">
+                <a class="link" href="/">Головна</a>
+            </div>
+            <p class="foo-text">2024</p>
+            <p class="foo-text">by Nazar Kovtun</p>
+        </footer>
+    </body>
+</html>

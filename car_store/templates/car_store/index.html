@@ -1,0 +1,17 @@
+{% extends 'car_store/base.html' %}
+{% load static %}
+{% block title %}Car Store{% endblock %}
+{% block content %}
+
+    {% for car in cars %}
+        <div class="car-container">
+            <h3>
+                <a class="car-title" href="{{ car.get_absolute_url }}">{{car.mark }} {{ car.model }}</a>
+            </h3>
+            <p class="main-text">Потужність: {{ car.power }}</p>
+            {{ car.description|truncatewords:15|linebreaks }}
+        </div>
+    {% endfor %}
+    {% include "car_store/paginator.html" with page=cars %}
+
+{% endblock %}

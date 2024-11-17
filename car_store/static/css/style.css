@@ -1,0 +1,89 @@
+/* navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 55px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: black;
+    border-bottom: 3px solid gray;
+
+}
+
+.link {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Z003;
+}
+
+
+/* footer */
+
+.foo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0 0 0;
+    padding: 10px;
+    background: black;
+    border-top: 3px solid gray;
+}
+
+.foo-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.foo-text {
+    margin: 0px;
+    color: white;
+    font-size: 15px;
+    font-family: Z003;
+}
+
+
+/* main page */
+
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    height: 100%;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.block-content, .main-content {
+    min-height: 77vh;
+}
+
+.car-container {
+    font-family: C059;
+    padding: 10px 15px;
+}
+
+.pagination {
+    font-family: C059;
+    padding-left: 10px;
+}
+
+.car-title {
+    text-decoration: none;
+    color: white;
+}
+
+.detail-block {
+    padding: 20px;
+}
+
+.mark-tag {
+    font-weight: bold;
+}
